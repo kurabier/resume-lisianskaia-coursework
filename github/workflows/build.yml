@@ -19,6 +19,7 @@ jobs:
 
       - name: Commit PDF
         run: |
+          cp lisianskaia.pdf lisianskaia-resume.pdf
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
           git add lisianskaia-resume.pdf
