@@ -1,7 +1,7 @@
 name: Compile and Publish PDF
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: write
@@ -24,4 +24,4 @@ jobs:
           git config user.name "GitHub Actions"
           git add lisianskaia-resume.pdf
           git commit -m "Update PDF" || echo "No changes"
-          git push origin master
+          git push origin main
