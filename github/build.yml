@@ -15,13 +15,12 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: python_guide.tex
+          root_file: lisianskaia.tex
 
       - name: Commit PDF
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add python_guide.pdf
+          git add lisianskaia-resume.pdf
           git commit -m "Update PDF" || echo "No changes"
           git push origin master
-
